@@ -89,8 +89,10 @@ func main() {
  if err == nil{
    
  fmt.Println()
- fmt.Println("[",milesUntil(currentMileage, s), "Miles until: ", maint[i].name, "is due.","]")
+ fmt.Println("[",milesUntil(currentMileage, s), "Miles until: ", maint[i].name, "is due.","]")	 
 
+ //If miles until is less than 100 than print this message to remind user not to forget.	 
+	 
  if milesUntil(currentMileage, s) <= 100{
 
  fmt.Println("[ DON'T FORGET! ]")
