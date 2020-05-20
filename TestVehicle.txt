@@ -1,0 +1,16 @@
+Spark Plugs
+4000
+Oil and Oil Filter Change
+5000
+Clean and Lube Chain
+750
+Check & Tighten nuts/bolts
+1000
+Change brake fluid
+15000
+Check tire pressure
+500
+Change air filter
+10000
+Replace Battery
+30000
