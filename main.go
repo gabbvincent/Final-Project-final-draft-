@@ -34,7 +34,6 @@ func main() {
 
   var  maint [8] maintenance
   
-
   //read from file
   
   fileName, err := os.Open("TestVehicle.txt")
