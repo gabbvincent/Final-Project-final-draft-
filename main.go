@@ -34,7 +34,7 @@ func main() {
 
   var  maint [8] maintenance
   
-  //read from file
+  //read the vehicle's maintenance information from file
   
   fileName, err := os.Open("TestVehicle.txt")
 
@@ -50,7 +50,7 @@ func main() {
 
   i := 0 
 
- //create an array for maintenance name and miles from file
+ //create an array for maintenance name and miles from the TestVehicle file
 
   for scannerName.Scan(){
 
@@ -80,7 +80,7 @@ func main() {
  fmt.Println()
  fmt.Println("At your current Mileage of", currentMileage, "you have: ")
 
- //Print Miles until maintenance.
+ //Loop that Prints Miles until each maintenance.
 
  for i:=0;i<=7;i++{
 
@@ -91,7 +91,7 @@ func main() {
  fmt.Println()
  fmt.Println("[",milesUntil(currentMileage, s), "Miles until: ", maint[i].name, "is due.","]")	 
 
- //If miles until is less than 100 than print this message to remind user not to forget.	 
+ //If miles until is less than 100 then print this message to remind user not to forget to do it soon.	 
 	 
  if milesUntil(currentMileage, s) <= 100{
 
